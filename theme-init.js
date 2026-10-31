@@ -1,5 +1,5 @@
 (() => {
-  const SETTINGS_KEY = "portfolioSettings";
+  const SETTINGS_KEY = "Settings";
 
   const defaultSettings = {
     theme: "light",

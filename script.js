@@ -1,5 +1,5 @@
 (() => {
-  const SETTINGS_KEY = "portfolioSettings";
+  const SETTINGS_KEY = "Settings";
 
   const defaultSettings = {
     theme: "light",
@@ -12,7 +12,6 @@
   const visitorNameInput = document.getElementById("visitor-name");
   const lastVisitText = document.getElementById("last-visit");
 
-  // Loads saved settings or returns defaults if the stored data is invalid.
   function loadSettings() {
     try {
       const storedSettings = localStorage.getItem(SETTINGS_KEY);
@@ -36,7 +35,6 @@
     }
   }
 
-  // Saves the settings object as JSON under one Local Storage key.
   function saveSettings(settings) {
     localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
   }
